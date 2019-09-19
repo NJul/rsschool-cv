@@ -14,12 +14,12 @@ My goal is to work remotely for a company.
 
 ### Skills
 
-:heavy_check_mark: HTML5 CSS3 JavaScript
-:heavy_check_mark: Bootstrap 4
-:white_medium_square: SCSS
-:heavy_check_mark: Adobe Photoshop Zeplin 
-:white_medium_square: Git  
-:heavy_check_mark: CMS Wordpress    
+    HTML5 CSS3 JavaScript
+    Bootstrap 4
+    SCSS
+    Adobe Photoshop Zeplin 
+    Git  
+    CMS Wordpress    
 
 ### Code examples
 
@@ -45,5 +45,5 @@ document.getElementById("button1").onclick = function() {
 
 ### Experience
 
-Training projects https://github.com/NJul/My-projects
+[Training projects](https://github.com/NJul/My-projects)
 
