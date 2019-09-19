@@ -47,3 +47,24 @@ document.getElementById("button1").onclick = function() {
 
 [Training projects](https://github.com/NJul/My-projects)
 
+### Education
+
+Higher education, <br>
+Oles Honchar Dnipro National University, <br>
+Faculty of Economics
+
+#### Courses
+
+[Codecademy](https://www.codecademy.com/users/NinaNJul/achievements)
+
+### English
+
+* A1
+
+### Ukrainian
+
+* Native
+
+### Russian 
+
+* C2
