@@ -1,0 +1,311 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-weight: 400;
+  line-height: 1.6;
+  font-family: 'Noto Sans TC', sans-serif;
+  background: url('./assets/images/bg.png');
+  background-attachment: fixed;
+}
+
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+/* Header */
+.header {
+  display: flex;
+  min-height: 260px;
+  margin-top: 50px;
+  align-items: center;
+  background-color: #BCB5AA;
+}
+
+.photo img {
+  width: 200px;
+  height: 200px;
+  margin: 30px 10px 30px 50px;
+  border: 1px solid #A1ADB9;
+  border-radius: 50%;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  line-height: 1.4;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 44px;
+  font-family: 'Noto Sans TC', sans-serif;
+  word-spacing: 10px;
+  letter-spacing: 2px;
+  color: #2F3137;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 40px;
+  font-family: 'Noto Sans TC', sans-serif;
+  word-spacing: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #6D5C62;
+}
+
+/* /.Header */
+
+/* Main */
+.about {
+  max-width: 600px;
+  margin: auto auto;
+  padding: 50px 10px 10px 10px;
+  font-size: 17px;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.about p {
+  text-indent: 40px;
+  padding: 0 20px 20px 20px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+  padding-bottom: 50px;
+}
+
+h3 {
+  margin-top: 30px;
+  padding-bottom: 10px;
+  font-weight: 500;
+  font-size: 26px;
+  font-family: 'Noto Sans TC', sans-serif;
+  color: #38373A;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.col-1 {
+  padding: 0 40px 10px 40px;
+  border-right: 3px solid #BCB5AA;
+}
+
+.effect-1 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.effect-2 {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+ul {
+  margin-left: 40px;
+  list-style-type: disc;
+}
+
+.col-2 {
+  padding: 0 40px 10px 40px;
+}
+
+/* Margin-top 0px */
+.mt0px {
+  margin-top: 0;
+}
+
+/* Skills */
+.skills {
+  display: inline-block;
+  margin: 5px 0;
+  padding: 5px 15px;
+  background: url('./assets/images/bg.png');
+  border-radius: 5px;
+}
+
+/* Code examples */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Button1 */
+.button1:active,
+.button1:focus {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+.button1 {
+  margin: 5px;
+  padding: 10px 27px;
+  font-family: 'Noto Sans TC', sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: rgb(139, 134, 127);
+  border: none;
+  border-radius: 5px;
+}
+
+.button1:hover {
+  background-color: #BCB5AA;
+}
+
+/* /.Button1 */
+
+/* /.Code examples */
+
+/* Effect */
+
+.effect a {
+  color: #B2BBC0;
+  text-shadow: 1px 0 #4D575D;
+}
+
+a,
+a>span {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+  line-height: 24px;
+}
+
+a:before,
+a:after,
+a>span:before,
+a>span:after {
+  content: '';
+  position: absolute;
+  transition: transform .5s ease;
+}
+
+.effect-5 {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.effect-5:before,
+.effect-5:after {
+  right: 0;
+  bottom: 0;
+  background: #4D575D;
+}
+
+.effect-5:before {
+  width: 100%;
+  height: 2px;
+  transform: translateX(-100%);
+}
+
+.effect-5:after {
+  width: 2px;
+  height: 100%;
+  transform: translateY(100%);
+}
+
+.effect-5>span {
+  display: block;
+  padding: 10px;
+}
+
+.effect-5>span:before,
+.effect-5>span:after {
+  left: 0;
+  top: 0;
+  background: #B2BBC0;
+}
+
+.effect-5>span:before {
+  width: 100%;
+  height: 2px;
+  transform: translateX(100%);
+}
+
+.effect-5>span:after {
+  width: 2px;
+  height: 100%;
+  transform: translateY(-100%);
+}
+
+.effect-5:hover:before,
+.effect-5:hover:after,
+.effect-5:hover>span:before,
+.effect-5:hover>span:after {
+  transform: translate(0, 0);
+}
+
+/* /. Effect */
+/* /. Main */
+
+@media screen and (max-width: 910px) {
+  .info {
+    flex-wrap: wrap;
+  }
+
+  .col-1 {
+    border-right: none;
+  }
+
+  .col-2 {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .code {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .photo img {
+    margin: 40px 10px 10px 10px;
+  }
+
+  .title {
+    align-items: center;
+  }
+
+  h1,
+  h2 {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .col-1 {
+    padding: 10px 20px 10px 20px;
+  }
+}
