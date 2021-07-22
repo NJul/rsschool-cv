@@ -301,6 +301,10 @@ ul {
   margin-top: 0;
 }
 
+.code__text {
+  padding: 5px 20px;
+}
+
 .code__button {
   display: flex;
   flex-direction: column;
@@ -311,6 +315,19 @@ ul {
 .light-title {
   background-color: var(--light-tilte);
   cursor: auto;
+}
+
+/* links-to-achievements */
+
+.links-to-achievements {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links-to-achievements__item {
+  margin: 0 10px;
 }
 
 /* Effect */
@@ -475,6 +492,10 @@ ul {
 
   .photo__profession {
     font-size: 1.875rem;
+  }
+
+  .links-to-achievements {
+    flex-direction: column;
   }
 }
 
