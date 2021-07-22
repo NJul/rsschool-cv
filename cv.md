@@ -5,21 +5,22 @@
 ### Contact Info
 
 * **Email:** nina.dev.web@gmail.com
-  
+
 * **Telegram:** @NinaNJul
 
 ### Summary
 
-My goal is to work remotely for a company.
+My goal is to work remotely for a company
 
 ### Skills
 
     HTML5 CSS3 JavaScript
+    React
     Bootstrap 4
     SCSS
-    Adobe Photoshop Zeplin 
-    Git  
-    CMS Wordpress    
+    Figma Adobe Photoshop
+    Git
+    CMS Wordpress
 
 ### Code examples
 
@@ -49,22 +50,22 @@ document.getElementById("button1").onclick = function() {
 
 ### Education
 
-Higher education, <br>
-Oles Honchar Dnipro National University, <br>
-Faculty of Economics
+Economist, Economics department, Oles Honchar National University, Dnipro, Ukraine
 
-#### Courses
+### Courses
 
 [Codecademy](https://www.codecademy.com/users/NinaNJul/achievements)
 
-### English
+### Languages
 
-* A1
+#### English
 
-### Ukrainian
+* A2
+
+#### Ukrainian
 
 * Native
 
-### Russian 
+#### Russian
 
 * C2
