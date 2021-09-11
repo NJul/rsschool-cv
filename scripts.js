@@ -1,4 +1,6 @@
 window.onload = function () {
+  hljs.highlightAll();
+
   /* Click the button to get the square root of each element in the array */
   const numbers = [4, 9, 16, 25];
   const squareRoot = document.getElementById('square-root');
