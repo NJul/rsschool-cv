@@ -7,8 +7,8 @@
   --grey-300: #cbd5e1;
   --background-color: #f8fafc;
   --col-1-border-right: #bcb5aa;
-  --heading-font: "Proza Libre", sans-serif;
-  --body-font: "Noto Sans TC", sans-serif;
+  --heading-font: 'Proza Libre', sans-serif;
+  --body-font: 'Noto Sans TC', sans-serif;
   --border-radius: 0.625rem;
   --transtion: 0.3s ease-in-out all;
   /* Box shadow */
@@ -54,7 +54,7 @@ pre {
   height: auto !important;
   width: auto !important;
   line-height: 1.1em !important;
-  font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier,
+  font-family: 'Consolas', 'Bitstream Vera Sans Mono', 'Courier New', Courier,
     monospace !important;
   font-weight: normal !important;
   font-style: normal !important;
@@ -248,6 +248,8 @@ ul {
   background-color: var(--white);
 }
 
+/* About me */
+
 .about-me {
   margin: 0 auto;
   max-width: 600px;
@@ -263,6 +265,19 @@ ul {
   text-indent: 40px;
   padding: 0 20px 20px 20px;
 }
+
+/* Latest projects */
+
+.latest-projects__title {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.latest-projects__tabs {
+  min-height: 560px;
+}
+
+/* Info */
 
 .info {
   display: flex;
@@ -415,7 +430,7 @@ ul {
 .effect a:after,
 .effect a > span:before,
 .effect a > span:after {
-  content: "";
+  content: '';
   position: absolute;
   transition: transform 0.5s ease;
 }
@@ -478,7 +493,7 @@ ul {
 /* Footer */
 
 .footer {
-  background: url("../assets/images/bg.png");
+  background: url('../assets/images/bg.png');
 }
 
 .footer__wrapper {
@@ -545,6 +560,10 @@ ul {
     justify-content: center;
   }
 
+  .latest-projects__tabs {
+    min-height: 460px;
+  }
+
   .photo {
     flex-direction: column;
   }
@@ -569,6 +588,10 @@ ul {
 @media screen and (max-width: 300px) {
   .body {
     background: var(--white);
+  }
+
+  .latest-projects__tabs {
+    min-height: 360px;
   }
 
   .info__col-1_left {
