@@ -1,0 +1,28 @@
+.slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 90%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.slider-img {
+  position: absolute;
+  max-width: 100%;
+  transition: all 0.2s;
+}
+
+.slider-img img {
+  width: 100%;
+  height: auto;
+}
+
+.slider-img-prev {
+  transform: translateX(-100%);
+}
+
+.slider-img-next {
+  transform: translateX(100%);
+}
