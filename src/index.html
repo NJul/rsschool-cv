@@ -19,6 +19,30 @@
   <body class="body">
     <header class="header">
       <div class="wrapper">
+        <nav class="navbar">
+          <ul class="nav__menu">
+            <li class="nav__item">
+              <a href="#about-me" class="nav__link">About me</a>
+            </li>
+            <li class="nav__item">
+              <a href="#latest-projects" class="nav__link">Latest projects</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact-info" class="nav__link">Contact info</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#courses" class="nav__link">Courses</a>
+            </li>
+          </ul>
+          <div class="hamb">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
         <div class="header__row">
           <div class="photo">
             <div class="photo__container">
@@ -40,7 +64,7 @@
     <main class="main">
       <div class="wrapper main__wrapper">
         <article class="about-me">
-          <h3 class="about-me__title">About me</h3>
+          <h3 class="about-me__title" id="about-me">About me</h3>
           <p class="about-me__text">
             Hello everyone, my name is Nina. I am Front-End Developer from
             Ukraine. I have more than 6 months of experience in the field of Web
@@ -55,14 +79,16 @@
         </article>
 
         <section class="section latest-projects">
-          <h3 class="latest-projects__title">Latest projects</h3>
+          <h3 class="latest-projects__title" id="latest-projects">
+            Latest projects
+          </h3>
           <div id="tabs" class="latest-projects__tabs"></div>
         </section>
 
         <div class="info">
           <div class="info__col-1_left">
             <section class="section contact">
-              <h3 class="contact__title">Contact info</h3>
+              <h3 class="contact__title" id="contact-info">Contact info</h3>
               <ul class="contact__list">
                 <li class="contact__item effect">
                   <img
@@ -107,7 +133,7 @@
             </section>
 
             <section class="section skills">
-              <h3 class="skills__title">Skills</h3>
+              <h3 class="skills__title" id="skills">Skills</h3>
               <ul class="skills__list">
                 <li class="skills__item">HTML5</li>
                 <li class="skills__item">CSS3</li>
@@ -213,7 +239,7 @@ squareRoot.onclick = function () {
               </section>
 
               <section class="links-to-achievements__item course">
-                <h3 class="course__title">Courses</h3>
+                <h3 class="course__title" id="courses">Courses</h3>
                 <div class="course__item effect">
                   <a
                     class="course__link effect-5"

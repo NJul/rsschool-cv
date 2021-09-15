@@ -1,6 +1,7 @@
-import './css/lib/highlight/default.min.css';
+import './css/lib/highlight/fruit-soda.min.css';
 import './css/style.css';
 
+import './js/menu.js';
 import './js/scripts.js';
 
 /* React */

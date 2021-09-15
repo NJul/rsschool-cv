@@ -1,21 +1,23 @@
-window.onload = function () {
-  hljs.highlightAll();
+hljs.highlightAll();
 
-  /* Click the button to get the square root of each element in the array */
-  const numbers = [4, 9, 16, 25];
-  const squareRoot = document.getElementById('square-root');
-  const squareRootResult = document.getElementById('square-root-result');
+/* Click the button to get the square root of each element in the array */
+const numbers = [4, 9, 16, 25];
+const squareRoot = document.getElementById('square-root');
+const squareRootResult = document.getElementById('square-root-result');
 
-  squareRoot.onclick = function () {
-    squareRootResult.innerHTML = numbers.map(Math.sqrt).join(', ');
-    squareRoot.disabled = true;
-    squareRoot.classList.add('light-title');
-  };
+squareRoot.onclick = function () {
+  squareRootResult.innerHTML = numbers.map(Math.sqrt).join(', ');
+  squareRoot.disabled = true;
+  squareRoot.classList.add('light-title');
+};
 
-  console.log(
-    `
+console.log(
+  `
 Score: 150
+
 Technologies: HTML, CSS, JavaScript; react.js, highlight.js
+
+Pull request: https://github.com/NJul/rsschool-cv/pull/4
 
 Критерии оценки
 Максимальный балл за задание +150
@@ -78,5 +80,4 @@ header +2, main +2, footer +2, section +2, article +2, nav +2, h1 +2, h2 +2, h3 
 
 Разница между максимальной оценкой за задание (150 баллов) и максимально возможным количеством баллов за выполнение всех пунктов требований (160 баллов) позволит сгладить возможные ошибки проверяющих в ходе кросс-чека, неточности в описании задания, разное понимание требований задания проверяющим и проверяемым.
     `
-  );
-};
+);
