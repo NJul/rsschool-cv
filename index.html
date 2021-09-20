@@ -10,11 +10,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
     />
+    <link rel="stylesheet" href="./css/lib/highlight/default.min.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Proza+Libre&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body class="body">
@@ -31,7 +32,7 @@
             </div>
             <div class="photo__title">
               <h1 class="photo__name">Nina Butenko</h1>
-              <h2 class="photo__profession">Junior Front-End Developer</h2>
+              <h2 class="photo__profession">Front-End Developer</h2>
             </div>
           </div>
         </div>
@@ -57,7 +58,7 @@
 
         <div class="info">
           <div class="info__col-1_left">
-            <section class="contact">
+            <section class="section contact">
               <h3 class="contact__title">Contact info</h3>
               <ul class="contact__list">
                 <li class="contact__item effect">
@@ -95,14 +96,14 @@
               </ul>
             </section>
 
-            <section class="summary">
+            <section class="section summary">
               <h3 class="summary__title">Summary</h3>
               <p class="summary__text">
                 My goal is to work remotely for a company
               </p>
             </section>
 
-            <section class="skills">
+            <section class="section skills">
               <h3 class="skills__title">Skills</h3>
               <ul class="skills__list">
                 <li class="skills__item">HTML5</li>
@@ -117,7 +118,7 @@
               </ul>
             </section>
 
-            <section class="education">
+            <section class="section education">
               <h3 class="education__title">Education</h3>
               <p class="education__text">
                 Economist, Economics department, Oles Honchar National
@@ -127,84 +128,61 @@
 
             <section class="language">
               <h3 class="language__title">Languages</h3>
-              <h4 class="language__subtitle">English</h4>
-              <p class="language__level">A2</p>
-              <h4 class="language__subtitle">Ukrainian</h4>
-              <p class="language__level">Native</p>
-              <h4 class="language__subtitle">Russian</h4>
-              <p class="language__level">C2</p>
+              <h4 class="language__subtitle language__subtitle_english">
+                English
+              </h4>
+              <p class="language__level language__level_a2">A2</p>
+              <h4 class="language__subtitle language__subtitle_ukrainian">
+                Ukrainian
+              </h4>
+              <p class="language__level language__level_native">Native</p>
+              <h4 class="language__subtitle language__subtitle_russian">
+                Russian
+              </h4>
+              <p class="language__level language__level_c2">C2</p>
             </section>
           </div>
 
           <div class="info__col-2_right">
-            <section class="code">
+            <section class="section code">
               <h3 class="code__title">Code examples</h3>
-              <p class="code__text">
-                <code>
-                  ~~~javascript
-                  <br />
-                  /* Click the button to get the square root
-                  <br />
-                  of each element in the array */
-                  <br />
-                  const numbers = [4, 9, 16, 25];
-                  <br />
-                  const squareRoot = document.getElementById('square-root');
-                  <br />
-                  const squareRootResult =
-                  document.getElementById('square-root-result');
-                  <br />
+              <div class="code__text">
+                <pre>
+                  <code class="language-javascript">
+~~~javascript  
+/* Click the button to get the square root of each element in the array */ 
+const numbers = [4, 9, 16, 25];   
+const squareRoot = document.getElementById('square-root');
+const squareRootResult = document.getElementById('square-root-result');
+squareRoot.onclick = function () {
+    squareRootResult.innerHTML = numbers.map(Math.sqrt).join(',');
+    squareRoot.disabled = true;
+    squareRoot.classList.add('light-title');                  
+}; 
+~~~   
+                  </code>
 
-                  squareRoot.onclick = function () {
-                  <br />
-                  squareRootResult.innerHTML = numbers.map(Math.sqrt).join(',
-                  ');
-                  <br />
-                  squareRoot.disabled = true;
-                  <br />
-                  squareRoot.classList.add('light-title');
-                  <br />
-                  };
-                  <br />
-                  ~~~
-                  <br />
-                  <br />
+                  <code class="html">                
+  ~~~html                
+  &lt;div class="code__button"&gt;                  
+  &lt;p class="code__text"&gt;                  
+  &lt;code&gt;const numbers = [4, 9, 16, 25];&lt;/code&gt;                  
+  &lt;/p&gt;                  
+  &lt;button id="square-root" class="code__button btn" type="button"&gt;
+    Square root                  
+  &lt;/button&gt;                  
+  &lt;p id="square-root-result" class="code__result"&gt;&nbsp;&lt;/p&gt;
+  &lt;/div&gt;                  
+  ~~~                 
                 </code>
-              </p>
-
-              <p class="code__text">
-                <code>
-                  ~~~html
-                  <br />
-                  &lt;div class="code__button"&gt;
-                  <br />
-                  &lt;p class="code__text"&gt;
-                  <br />
-                  &lt;code&gt;const numbers = [4, 9, 16, 25];&lt;/code&gt;
-                  <br />
-                  &lt;/p&gt;
-                  <br />
-                  &lt;button id="square-root" class="code__button btn"
-                  type="button"&gt;
-                  <br />
-                  Square root
-                  <br />
-                  &lt;/button&gt;
-                  <br />
-                  &lt;p id="square-root-result"
-                  class="code__result"&gt;&nbsp;&lt;/p&gt;
-                  <br />
-                  &lt;/div&gt;
-                  <br />
-                  ~~~
-                  <br />
-                </code>
-              </p>
+              </pre>
+              </div>
 
               <div class="code__button">
-                <p class="code__text">
+                <pre>
                   <code>const numbers = [4, 9, 16, 25];</code>
-                </p>
+                </pre>
+
                 <button id="square-root" class="code__button btn" type="button">
                   Square root
                 </button>
@@ -243,6 +221,7 @@
         </div>
       </div>
     </main>
+
     <footer class="footer">
       <div class="wrapper footer__wrapper">
         <div class="footer__item">
@@ -258,11 +237,14 @@
           <p class="footer__year">2021</p>
         </div>
         <div class="footer__item">
-          <a class="footer__link" href="https://github.com/NJul">GitHub</a>
+          <a class="footer__link" href="https://github.com/NJul" target="_blank"
+            >GitHub</a
+          >
         </div>
       </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
     <script src="./scripts.js"></script>
   </body>
 </html>
